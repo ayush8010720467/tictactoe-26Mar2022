@@ -4,6 +4,7 @@ import {useState} from 'react';
 function Game(props){
     const [winnerMessage, setWinnerMessage]= useState('');
     const getWinner = (winner)=>{
+        console.log("Winner is called", winner)
         if(winner){
             setWinnerMessage(`The Winner is ${winner}`);
         }
